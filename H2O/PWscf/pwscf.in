@@ -1,0 +1,44 @@
+&CONTROL
+  calculation = 'relax'
+  etot_conv_thr =   3.0000000000d-05
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './out/'
+  prefix = 'aiida'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+  verbosity = 'high'
+/
+&SYSTEM
+  degauss =   1.4699723600d-02
+  ecutrho =   4.8000000000d+02
+  ecutwfc =   6.0000000000d+01
+  ibrav = 0
+  nat = 3
+  nosym = .false.
+  nspin = 2
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'cold'
+  starting_magnetization(1) =   1.0000000000d-01
+  starting_magnetization(2) =   1.0000000000d-01
+  input_dft = 'rvv10'
+/
+&ELECTRONS
+  conv_thr =   6.0000000000d-10
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+/
+ATOMIC_SPECIES
+H      1.00794 H.pbesol-rrkjus_psl.1.0.0.UPF
+O      15.9994 O.pbesol-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS crystal
+O            0.5000000000       0.5000000000       0.4709080000 
+H            0.5000000000       0.5266540000       0.4870700000 
+H            0.5000000000       0.4733460000       0.4870700000 
+K_POINTS automatic
+2 2 1 0 0 0
+CELL_PARAMETERS angstrom
+     28.6303540000       0.0000000000       0.0000000000
+      0.0000000000      28.3426060000       0.0000000000
+      0.0000000000       0.0000000000      36.4404950000
