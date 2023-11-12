@@ -1,6 +1,7 @@
+<h2>Corrosion inhibitor example</h2>h2
 This example shows the calculation of the adsorption energy of a surface inhibitor to a (110) Fe surface in comparison with the adsorption energy of a water molecule, using the PBEsol+rVV10 method. The folders contain input files for the Quantum ESPRESSO program, pseudopotential files and rVV10 table. The basics of the methodology are outlined in the article [1].
 
-Organic dimer on top of (110) Fe surface slab
+Organic dimer on top of (110) Fe surface slab:
 ![alt text](https://github.com/mxm2/corrosion_inhibition/blob/main/1.bmp)
  
 References:
